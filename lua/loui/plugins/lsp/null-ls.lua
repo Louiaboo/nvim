@@ -21,13 +21,6 @@ return {
 			-- setup formatters & linters
 			sources = {
 				--  to disable file types use
-				--  "formatting.prettier.with({disabled_filetypes: {}})" (see null-ls docs)
-				formatting.prettier.with({
-					extra_filetypes = { "svelte" },
-					cli_options = {
-						tab_width = 4,
-					},
-				}), -- js/ts formatter
 				formatting.stylua, -- lua formatter
 				formatting.black,
 				diagnostics.mypy,
