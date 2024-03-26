@@ -89,12 +89,6 @@ return {
 			on_attach = on_attach,
 		})
 
-		-- configure tailwindcss server
-		lspconfig["tailwindcss"].setup({
-			capabilities = capabilities,
-			on_attach = on_attach,
-		})
-
 		-- configure svelte server
 		lspconfig["svelte"].setup({
 			capabilities = capabilities,
@@ -112,6 +106,11 @@ return {
 			capabilities = capabilities,
 			on_attach = on_attach,
 			filetypes = { "graphql", "gql", "svelte", "typescriptreact", "javascriptreact" },
+		})
+
+		lspconfig["solargraph"].setup({
+			capabilities = capabilities,
+			on_attach = on_attach,
 		})
 
 		-- configure emmet language server

@@ -23,6 +23,8 @@ return {
 				--  to disable file types use
 				formatting.stylua, -- lua formatter
 				formatting.black,
+				formatting.rubocop,
+				diagnostics.solargraph,
 				diagnostics.mypy,
 				diagnostics.pyright,
 				diagnostics.eslint_d.with({ -- js/ts linter
